@@ -134,6 +134,49 @@ footer {
     margin: 5px 0;
 }
 
+
+.whatsapp-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .whatsapp-button {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .whatsapp-button svg {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+        
+        @media (max-width: 600px) {
+            .whatsapp-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+
+
 /* Адаптивность */
 @media (max-width: 900px) {
     .feature {
